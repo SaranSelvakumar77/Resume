@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saran Selvakumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Michroma', sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  section {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  p {
+    max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #2196f3;
+    box-shadow: 0 4px 12px rgba(33,150,243,0.4);
+  }
+  .work-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .work-box {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 20px;
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    transition: transform 0.3s ease;
+  }
+  .work-box:hover {
+    transform: scale(1.05);
+  }
+  iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+  }
+  .expertise-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .expertise-item {
+    padding: 15px 25px;
+    background: #111;
+    border: 2px solid #2196f3;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .expertise-item i {
+    font-size: 1.3rem;
+    color: #2196f3;
+  }
+  .expertise-item:hover {
+    transform: scale(1.05);
+    background: #2196f3;
+    color: #000;
+  }
+  .expertise-item:hover i {
+    color: #000;
+  }
+  .conclusion-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .thank-you-text {
+    font-size: 1.1rem;
+    margin-top: 30px;
+    color: #2196f3;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+    }
+    .expertise-item {
+      font-size: 0.9rem;
+      padding: 12px 20px;
+    }
+    iframe {
+      height: 160px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+    }
+    .expertise-item {
+      font-size: 0.85rem;
+      padding: 10px 16px;
+    }
+    iframe {
+      height: 150px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <section>
+    <img src="profilepic.jpeg" alt="Saran Selvakumar Photo" class="profile-photo" />
+    <h1>Saran Selvakumar</h1>
+    <h2>VFX Artist</h2>
+    <p>Visual effects artist specializing in compositing, motion graphics, and cinematic storytelling. Skilled in Nuke and After Effects, I craft immersive visuals for film, television, and digital media.</p>
+  </section>
+
+  <section>
+    <h1>Tools & Expertise</h1>
+    <div class="expertise-grid">
+      <div class="expertise-item"><i class="fas fa-magic"></i> Nuke</div>
+      <div class="expertise-item"><i class="fas fa-bolt"></i> After Effects</div>
+      <div class="expertise-item"><i class="fas fa-film"></i> Compositing</div>
+      <div class="expertise-item"><i class="fas fa-layer-group"></i> Motion Graphics</div>
+      <div class="expertise-item"><i class="fas fa-video"></i> Cinematic FX</div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Showreel</h1>
+    <div class="work-container">
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/zZ1dzqE53lk" title="VFX Artist Portfolio Reviews - Compilation 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/woc7Fe3bAd4" title="VFX Portfolio Review 01" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Compositing Projects</h1>
+    <div class="work-container">
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/j3wyXEIOy3c" title="VFX Portfolio Review 02" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/eBXtghNwWRY" title="VFX Artist Portfolio Reviews - Compilation 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Motion Graphics</h1>
+    <div class="work-container">
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/geqM0ghAGdM" title="Advice for VFX Artist Portfolio" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/QcNT2IoJQbw" title="VFX Tips: Build a Portfolio That Stands Out" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Career Journey</h1>
+    <div class="work-container">
+      <div class="work-box">
+        <iframe src="https://www.youtube.com/embed/AxT906vWVVY" title="Self Taught VFX Artists... Listen Up." frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Conclusion & Thank You</h1>
+    <p class="conclusion-text">
+      Every frame I touch is a chance to tell a story. From subtle compositing to bold visual effects, I strive to elevate narratives through design and precision. Let’s collaborate and bring your vision to life.
+    </p>
+    <p class="thank-you-text">Let's create something cinematic together.</p>
+    <div style="margin-top: 40px;">
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" style="color: #2196f3; text-decoration: none; font-size: 1.2rem;">
+        <i class="fab fa-linkedin" style="font-size: 1.5rem; margin-right: 10px;"></i>Connect on LinkedIn
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
